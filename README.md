@@ -47,7 +47,9 @@ python main.py
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Audio Alerts
 Two .mp3 files are used to provide audio warnings:
+
 minimap_warning.mp3 – Played when new enemy units appear on the minimap
+
 supply_warning.mp3 – Played when you're close to being supply blocked
 
 These are already included. You can replace them or generate your own using the scripts in the /tools folder
