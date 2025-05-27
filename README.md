@@ -1,8 +1,20 @@
 # StarCraft II Game Assistant
 
-A real-time assistant for StarCraft II using Python and OpenCV. It detects enemy units on the minimap and monitors your supply count, giving timely audio alerts during gameplay.
+A real-time assistant for StarCraft II using Python and OpenCV. It notices enemy units on the minimap and monitors your supply count in case the player did not see it or is distracted, giving timely audio alerts during gameplay.
 
----
+I made this project to help my dad improve at StarCraft II — specifically to give him an edge in noticing enemy movements and managing his supply more efficiently.
+He’s a solid player, but tends to get caught off guard or supply blocked at key moments. My goal was to give him a tool that boosts his awareness, so maybe (just maybe) he can finally break into Gold rank.
+
+It also gave me a great excuse to explore computer vision, and Python automation in a fun and meaningful way.
+
+Disclaimer:
+This tool is not a cheat and does not modify or interfere with StarCraft II’s game code in any way. It functions purely as an external assistant that analyzes on-screen visual information to provide helpful reminders.
+Its purpose is to alert players about their supply count or notify them of visible enemy units on the minimap—things they might have overlooked during gameplay.
+It does not provide unfair advantages, automate gameplay, or access any game internals.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -63,9 +75,3 @@ Want your own voice lines? Use the Python scripts in the /tools folder:
 
 /tools/generate_supply_voice.py
 /tools/generate_minimap_voice.py
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-I made this project to help my dad improve at StarCraft II — specifically to give him an edge in noticing enemy movements and managing his supply more efficiently.
-He’s a solid player, but tends to get caught off guard or supply blocked at key moments. My goal was to give him a tool that boosts his awareness, so maybe (just maybe) he can finally break into Gold rank.
-
-It also gave me a great excuse to explore computer vision, and Python automation in a fun and meaningful way.
