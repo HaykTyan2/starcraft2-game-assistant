@@ -12,16 +12,12 @@ def play_alert_minimap():
     if not os.path.exists(filename):
         print("Missing minimap_warning.mp3 file.")
         return
-
     pygame.mixer.music.load(filename)
     pygame.mixer.music.set_volume(0.2)
     pygame.mixer.music.play()
+    time.sleep(2)
 
-    start = time.time()
-    while pygame.mixer.music.get_busy() and time.time() - start < 2:
-        time.sleep(0.01)
-
-def run_minimap_alert():
+def run_minimap_alert(stop_event):
     region = (19, 1081, 356, 334)
 
     lower_red_1 = np.array([0, 150, 150])
@@ -38,7 +34,7 @@ def run_minimap_alert():
 
     print("Minimap scanner running...")
 
-    while True:
+    while not stop_event.is_set():
         screenshot = pyautogui.screenshot(region=region)
         frame = np.array(screenshot)
 
