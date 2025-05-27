@@ -34,6 +34,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Install dependencies with:
+MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT
 
 ```bash
 pip install -r requirements.txt
@@ -41,6 +42,7 @@ pip install -r requirements.txt
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Starting the Assistant:
 Run this command in your terminal:
+MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT
 ```
 python main.py
 ```
