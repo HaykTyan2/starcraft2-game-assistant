@@ -33,16 +33,18 @@ Update the path in `supply_depot.py` LIKE THIS:
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------
+(MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT)
 Install dependencies with:
-MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT
+
 
 ```bash
 pip install -r requirements.txt
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------
+(MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT)
 Starting the Assistant:
 Run this command in your terminal:
-MAKE SURE YOU'RE IN THE CORRECT FOLDER BEFORE RUNNING IT
+
 ```
 python main.py
 ```
