@@ -5,7 +5,7 @@ A real-time assistant for StarCraft II using Python and OpenCV. It notices enemy
 I made this project to help my dad improve at StarCraft II — specifically to give him an edge in noticing enemy movements and managing his supply more efficiently.
 He’s a solid player, but tends to get caught off guard or supply blocked at key moments. My goal was to give him a tool that boosts his awareness, so maybe (just maybe) he can finally break into Gold rank.
 
-It also gave me a great excuse to explore computer vision, and Python automation in a fun and meaningful way.
+It also gave me a great excuse to explore computer vision, and Python automation in a fun and meaningful way in my favorite game.
 
 Disclaimer:
 This tool is not a cheat and does not modify or interfere with StarCraft II’s game code in any way. It functions purely as an external assistant that analyzes on-screen visual information to provide helpful reminders.
