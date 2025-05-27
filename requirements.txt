@@ -1,0 +1,6 @@
+opencv-python
+pyautogui
+pytesseract
+pygame
+Pillow
+gTTS  # (or pyttsx3 depending on what you used)
