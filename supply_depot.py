@@ -14,20 +14,16 @@ def play_alert_supply():
     if not os.path.exists(filename):
         print("Missing supply_warning.mp3 file.")
         return
-
     pygame.mixer.music.load(filename)
     pygame.mixer.music.set_volume(0.2)
     pygame.mixer.music.play()
+    time.sleep(2)
 
-    start = time.time()
-    while pygame.mixer.music.get_busy() and time.time() - start < 2:
-        time.sleep(0.01)
-
-def run_supply_monitor():
+def run_supply_monitor(stop_event):
     region = (2350, 25, 160, 50)
     monitoring = False
 
-    while True:
+    while not stop_event.is_set():
         screenshot = pyautogui.screenshot(region=region)
         gray = screenshot.convert('L')
         text = pytesseract.image_to_string(gray)
